@@ -1,0 +1,22 @@
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[project]
+name = "fuzzy-specialist-enasemble"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mlflow>=3.16.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-fuzzy>=0.5.0",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+]
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""
